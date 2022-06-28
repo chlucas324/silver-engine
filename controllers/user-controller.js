@@ -65,8 +65,9 @@ const userController = {
       { _id: params.id },
       { $addToSet: { friends: params.friendId } },
       { new: true }
-    );
-    then((dbUserData) => res.json(dbUserData)).catch((err) => res.json(err));
+    )
+    .then((dbUserData) => res.json(dbUserData))
+    .catch((err) => res.json(err));
   },
 
   //delete friend
@@ -83,7 +84,7 @@ const userController = {
         }
         res.json(dbUserData);
       })
-      .catch((err) => res.json(err));
+      .catch((err) => res.json(400).json(err));
   },
 };
 
