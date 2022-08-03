@@ -18,9 +18,9 @@
   
   ## Installation
   * Clone GitHub repository 
-  * npm init 
+  * `npm init` 
   * Confirm that MongoDB and Express are installed. 
-  * npm start
+  * `npm start`
 
   ## Usage
   Start the application by using `npm start`.
